@@ -1,0 +1,7 @@
+node_modules/
+hireflow-backend/node_modules/
+.env
+hireflow-backend/.env
+*.log
+.gemini/
+.vscode/

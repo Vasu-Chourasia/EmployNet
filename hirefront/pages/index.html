@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HireFlow - Premium Job Portal</title>
+  <!-- Global and Auth Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+
+  <!-- Sticky Top Navbar -->
+  <nav class="navbar"></nav>
+
+  <!-- Auth Section Wrapper -->
+  <main class="auth-wrapper">
+    <div class="auth-container">
+      
+      <!-- Toggle Tabs for Login/Register -->
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab active" id="tab-login">Sign In</button>
+        <button type="button" class="auth-tab" id="tab-register">Register</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form">
+        <div class="auth-header">
+          <h2>Welcome Back</h2>
+          <p>Login to search, post jobs, and manage applications.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-control" placeholder="name@company.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="login-btn">
+          <span>Sign In</span>
+        </button>
+
+        <p class="auth-toggle">
+          Don't have an account? <a href="#" id="link-to-register">Register here</a>
+        </p>
+      </form>
+
+      <!-- Register Form -->
+      <form id="register-form" class="auth-form hidden">
+        <div class="auth-header">
+          <h2>Create Account</h2>
+          <p>Join the HireFlow community today.</p>
+        </div>
+
+        <div class="form-group">
+          <label for="register-name">Full Name</label>
+          <input type="text" id="register-name" class="form-control" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="register-email">Email Address</label>
+          <input type="email" id="register-email" class="form-control" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" class="form-control" placeholder="At least 6 characters" required minlength="6">
+        </div>
+
+        <!-- Role Selection Groups -->
+        <div class="form-group">
+          <label for="register-role">I want to register as a:</label>
+          <select id="register-role" class="form-control" required>
+            <option value="job_seeker" selected>Job Seeker</option>
+            <option value="recruiter">Recruiter</option>
+          </select>
+        </div>
+
+        <!-- Role-Specific Fields -->
+        <div id="seeker-fields" class="role-fields">
+          <div class="form-group">
+            <label for="seeker-skills">Key Skills (Comma separated)</label>
+            <input type="text" id="seeker-skills" class="form-control" placeholder="JavaScript, Node.js, SQL">
+          </div>
+          <div class="form-group">
+            <label for="seeker-experience">Years of Experience</label>
+            <input type="number" id="seeker-experience" class="form-control" placeholder="e.g. 2" min="0">
+          </div>
+          <div class="form-group">
+            <label for="seeker-resume">Resume Link</label>
+            <input type="url" id="seeker-resume" class="form-control" placeholder="https://drive.google.com/resume">
+          </div>
+        </div>
+
+        <div id="recruiter-fields" class="role-fields hidden">
+          <div class="form-group">
+            <label for="recruiter-company">Company Name</label>
+            <input type="text" id="recruiter-company" class="form-control" placeholder="TechCorp Solutions">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="register-btn">
+          <span>Create Account</span>
+        </button>
+
+        <p class="auth-toggle">
+          Already have an account? <a href="#" id="link-to-login">Sign In here</a>
+        </p>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <p>&copy; 2026 HireFlow Inc. All rights reserved.</p>
+  </footer>
+
+  <!-- Central script import -->
+  <script type="module" src="../js/auth.js"></script>
+</body>
+</html>
