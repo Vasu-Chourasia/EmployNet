@@ -1,17 +1,18 @@
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 
-// Create connection pool to MySQL
+// Create connection pool to MySQL (with fallback to Railway environment variables)
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || '127.0.0.1',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'hireflow_db',
-  port: parseInt(process.env.DB_PORT || '3306'),
+  host: process.env.DB_HOST || process.env.MYSQLHOST || '127.0.0.1',
+  user: process.env.DB_USER || process.env.MYSQLUSER || 'root',
+  password: process.env.DB_PASSWORD !== undefined ? process.env.DB_PASSWORD : (process.env.MYSQLPASSWORD || ''),
+  database: process.env.DB_NAME || process.env.MYSQLDATABASE || 'hireflow_db',
+  port: parseInt(process.env.DB_PORT || process.env.MYSQLPORT || '3306'),
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
 });
+
 
 // Test the connection on startup
 (async () => {
