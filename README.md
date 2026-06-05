@@ -1,6 +1,6 @@
-# HireFlow - Full-Stack Job Portal System
+# EmployNet - Full-Stack Job Portal System
 
-HireFlow is a highly responsive, modern Job Portal System designed to connect Job Seekers with Recruiters. It features a complete Node.js Express backend, a MySQL database relational schema, and a modern Vanilla CSS/JS single-page-feel web client.
+EmployNet is a highly responsive, modern Job Portal System designed to connect Job Seekers with Recruiters. It features a complete Node.js Express backend, a MySQL database relational schema, and a modern Vanilla CSS/JS single-page-feel web client.
 
 ---
 
@@ -80,7 +80,7 @@ Ensure you have MySQL installed and running on your local machine.
   ```sql
   SOURCE d:/SQL/hireflow-backend/schema.sql;
   ```
-  *(Note: If importing from terminal CLI, you can run: `mysql -u root -p < d:/SQL/hireflow-backend/schema.sql`)*. This will create the database `hireflow_db` and seed it with pre-defined recruiter accounts, seeker accounts, jobs, and applications for testing.
+  *(Note: If importing from terminal CLI, you can run: `mysql -u root -p < d:/SQL/hireflow-backend/schema.sql`)*. This will create the database `employnet_db` and seed it with pre-defined recruiter accounts, seeker accounts, jobs, and applications for testing.
 
 ### 2. Configuration Setup
 Modify the environment variables in [hireflow-backend/.env](file:///d:/SQL/hireflow-backend/.env):
@@ -89,9 +89,9 @@ PORT=5000
 DB_HOST=127.0.0.1
 DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
-DB_NAME=hireflow_db
+DB_NAME=employnet_db
 DB_PORT=3306
-JWT_SECRET=super_secret_jwt_key_hireflow_2026
+JWT_SECRET=super_secret_jwt_key_employnet_2026
 ```
 
 ### 3. Install Backend Dependencies

@@ -58,7 +58,7 @@ app.get('/test-db', async (req, res) => {
 
 // Start Server and listen on specified port
 app.listen(PORT, () => {
-  console.log(`🚀 HireFlow Server is running on port ${PORT}`);
+  console.log(`🚀 EmployNet Server is running on port ${PORT}`);
   console.log(`🔗 Local API: http://localhost:${PORT}/api`);
   console.log(`💻 User Interface: http://localhost:${PORT}/pages/index.html`);
 });

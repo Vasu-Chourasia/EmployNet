@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
-const JWT_SECRET = process.env.JWT_SECRET || 'super_secret_jwt_key_hireflow_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'super_secret_jwt_key_employnet_2026';
 
 // Middleware to verify if a valid JWT is present in the request header
 function verifyToken(req, res, next) {

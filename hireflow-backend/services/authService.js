@@ -6,7 +6,7 @@ const seekerModel = require('../models/seekerModel');
 const recruiterModel = require('../models/recruiterModel');
 require('dotenv').config();
 
-const JWT_SECRET = process.env.JWT_SECRET || 'super_secret_jwt_key_hireflow_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'super_secret_jwt_key_employnet_2026';
 const JWT_EXPIRES_IN = '7d';
 
 // Business logic for registering a new user

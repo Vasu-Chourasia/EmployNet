@@ -101,8 +101,8 @@ export function setupNavbar() {
 
   let navContent = `
     <a href="/pages/index.html" class="logo-container">
-      <div class="logo-icon">H</div>
-      <div class="logo-text">HireFlow</div>
+      <div class="logo-icon">E</div>
+      <div class="logo-text">EmployNet</div>
     </a>
     <ul class="nav-links">
       <li><a href="/pages/jobs.html" class="nav-link" id="nav-jobs">Browse Jobs</a></li>

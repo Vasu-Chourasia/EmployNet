@@ -1,7 +1,7 @@
 {
-  "name": "hireflow-backend",
+  "name": "employnet-backend",
   "version": "1.0.0",
-  "description": "Backend API for HireFlow Job Portal System",
+  "description": "Backend API for EmployNet Job Portal System",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

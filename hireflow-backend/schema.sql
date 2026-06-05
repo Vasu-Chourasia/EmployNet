@@ -1,6 +1,6 @@
 -- Create database if not exists
-CREATE DATABASE IF NOT EXISTS hireflow_db;
-USE hireflow_db;
+CREATE DATABASE IF NOT EXISTS employnet_db;
+USE employnet_db;
 
 -- 1. Users Table
 CREATE TABLE IF NOT EXISTS users (
