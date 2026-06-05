@@ -1,5 +1,7 @@
 # EmployNet - Full-Stack Job Portal System
 
+🚀 **Live Deployment URL**: [https://employnet-production.up.railway.app](https://employnet-production.up.railway.app)
+
 EmployNet is a highly responsive, modern Job Portal System designed to connect Job Seekers with Recruiters. It features a complete Node.js Express backend, a MySQL database relational schema, and a modern Vanilla CSS/JS single-page-feel web client.
 
 ---
