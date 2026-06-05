@@ -1,6 +1,6 @@
--- Create database if not exists
-CREATE DATABASE IF NOT EXISTS employnet_db;
-USE employnet_db;
+-- Database initialization script
+-- (Tables will be created in the active database targeted during import)
+
 
 -- 1. Users Table
 CREATE TABLE IF NOT EXISTS users (
