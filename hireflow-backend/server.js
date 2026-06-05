@@ -56,6 +56,7 @@ app.get('/test-db', async (req, res) => {
   }
 });
 
+const PORT = process.env.PORT || 5000;
 // Start Server and listen on specified port
 app.listen(PORT, () => {
   console.log(`🚀 EmployNet Server is running on port ${PORT}`);
