@@ -30,8 +30,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/jobs', jobRoutes);
 app.use('/api/applications', applicationRoutes);
 
-// Serve Frontend Static Files from sibling folder '/hirefront/'
-const frontendPath = path.join(__dirname, '../hirefront');
+// Serve Frontend Static Files from child folder '/hirefront/'
+const frontendPath = path.join(__dirname, 'hirefront');
 app.use(express.static(frontendPath));
 
 // Redirect root URL to index.html login page
