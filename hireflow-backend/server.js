@@ -47,14 +47,6 @@ app.use((err, req, res, next) => {
 
 const db = require('./config/db');
 
-app.get('/test-db', async (req, res) => {
-  try {
-    const [rows] = await db.query('SELECT * FROM users');
-    res.json(rows);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
 
 
 // Start Server and listen on specified port
